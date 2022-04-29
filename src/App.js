@@ -1,8 +1,6 @@
 
 import QuoteBox from './Components/QuoteBox';
-import React, { useState } from "react";
 import './App.css';
-import { getByTitle } from '@testing-library/react';
 
 
 
