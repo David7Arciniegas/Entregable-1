@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Quotes from './Quotes.json';
+import Author from './Author';
 
 
 const colors = ["red", "lightblue", "yellow", "lightgreen", "lightcoral", "gold", "silver", "purple"]
@@ -25,14 +26,17 @@ const QuoteBox = () => {
         <div className="card" style={{color: colors[randomColor]}}>
 
             <h1><b className='quote'>"</b>{Quotes[index].quote}"</h1>
-            <p>"{Quotes[index].author}"</p>
-           
+
+            <Author index={index}/>
+
+            <div className="button" >
+
+        <button onClick={changeQuote} style={{color: colors[randomColor]}}>
+        <i className="fa-solid fa-rotate"></i>
+        </button>
+      </div>
         
-           <div className="button" >
-            <button onClick={changeQuote} style={{color: colors[randomColor]}}>
-            <i class="fa-solid fa-rotate"></i>
-            </button>
-          </div>
+         
 
         </div>
         </>

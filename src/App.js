@@ -3,7 +3,6 @@ import QuoteBox from './Components/QuoteBox';
 import './App.css';
 
 
-
 function App() {
 
   return (
@@ -13,7 +12,8 @@ function App() {
     <div className='App'>
     
     <QuoteBox />
-    
+  
+  
 
     </div>
     </>
